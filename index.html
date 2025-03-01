@@ -1,203 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Hannah-Dougherty-Resume-25</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .logo img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
-<body id="page-top">
-<div id="headertop" style="height:100px;background-color:#a064c8;text-align:center;">
-    <table>
-        <thead>
-        <th style="padding:35px;color:white;"><a class="nav-link js-scroll-trigger" href="#about">About</a></th>
-        <th style="padding:35px;color:white;"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></th>
-        <th style="padding:35px;color:white;"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></th>
-        <th style="padding:35px;color:white;"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></th>
-        <th style="padding:35px;color:white;"><a class="nav-link js-scroll-trigger" href="#activities">Activities</a></th>
-        </thead>
-    </table>
-</div>
-<!-- Navigation-->
-<!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Dougherty Hannah </span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/IMG_3690.jpg" alt="..." /></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#activities">Activities</a></li>
-        </ul>
+<body>
+<div class="navbar">
+    <div class="logo">
+        <a href="#page-top">
+            <img src="assets/img/IMG_3690.jpg" alt="Profile Image">
+        </a>
     </div>
-</nav>-->
-<!-- Page Content-->
-<div class="container-fluid p-0">
-    <!-- About-->
-    <section class="resume-section" id="about">
-        <div class="resume-section-content">
-            <!--<h1 class="mb-0">
-                Dougherty
-                <span class="text-primary">Hannah</span>
-            </h1>-->
-            <div class="subheading mb-5">
-                Boston, MA 02108 · (518) 669-2355 ·
-                <a href="mailto:handough@gmail.com">handough@gmail.com</a>
-            </div>
-            <p class="lead mb-5">Results-driven software developer with 4+ years of experience designing, developing, and deploying high-quality software solutions that meet the evolving needs of clients and end-users. Committed to continuous learning and staying updated on emerging technologies to deliver innovative solutions.</p>
-            <div class="social-icons">
-                <a class="social-icon" href="https://www.linkedin.com/in/hannah-dougherty-54018714b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <!--<a class="social-icon" href="https://github.com/handough8" target="_blank"><i class="fab fa-github"></i></a>-->
-            </div>
-        </div>
-    </section>
-    <hr class="m-0" />
-    <!-- Experience-->
-    <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Experience</h2>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Full Stack Software Developer</h3>
-                    <div class="subheading mb-3">Fulcimus</div>
-                    <p>As a Full Stack Software Developer, I acquired strong system analysis skills by breaking down complex systems into manageable components and developing solutions that
-                        meet the evolving needs of clients and end-users. I was the project lead for a complex implementation of a client portal intake system and case management system for
-                        government-sponsored public health programs. I successfully streamlined the application process, increased case management efficiency, and automated the generation of
-                        customizable state-required reports. These systems allowed over 2,000 applicants to seamlessly apply for critical resources – like affordable housing and food assistance,
-                        and enabled government agencies to efficiently service each case.  </p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">April 2021 - Present</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Full Stack Software Developer</h3>
-                    <div class="subheading mb-3">Care Design NY</div>
-                    <p>As a Full Stack Software Developer, I played a key role in developing web applications for over 300,000 users, focusing on optimizing care plans through advanced data
-                        processing, analysis, and visualization. I collaborated closely with QA teams to conduct rigorous testing, identify application bugs, and implement effective solutions,
-                        ensuring the delivery of high-quality software products. Additionally, I documented technical specifications, processes, and procedures to uphold consistency in development
-                        workflows.</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">May 2020 - April 2021</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Junior Software Developer</h3>
-                    <div class="subheading mb-3">Care Design NY</div>
-                    <p>As a Junior Software Developer and senior in college, I collaborated with cross-functional teams to gather requirements, design solutions, and implement new features
-                        within agile development processes. I played a key role in database design and optimization, ensuring data integrity and improving performance for the case management
-                        system. Leveraging hands-on training, I made significant contributions to various software development projects, enhancing overall team effectiveness and project outcomes.</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">January 2020 - May 2020</span></div>
-            </div>
-        </div>
-    </section>
-    <hr class="m-0" />
-    <!-- Education-->
-    <section class="resume-section" id="education">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Education</h2>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Marist College</h3>
-                    <div class="subheading mb-3">Bachelor of Science</div>
-                    <div>Computer Science - Software Development</div>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">August 2016 - May 2020</span></div>
-            </div>
-        </div>
-    </section>
-    <hr class="m-0" />
-    <!-- Skills-->
-    <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Programming Languages & Tools</div>
-            <ul class="list-inline dev-icons">
-                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                <li class="list-inline-item"><i class="fab fa-github"></i></li>
-            </ul>
-            <div class="subheading mb-3">Workflow</div>
-            <ul class="fa-ul mb-0">
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Process Optimization
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Quality Assurance
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Cross-Functional Teams
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Agile Development & Scrum
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Database Optimization
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Unit Testing
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Communication and Collaboration
-                </li>
-            </ul>
-        </div>
-    </section>
-    <hr class="m-0" />
-    <!-- Interests-->
-    <section class="resume-section" id="interests">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Interests</h2>
-            <p>Apart from being a software developer, I enjoy running outdoors. For 17 years, I was a competitive swimmer and specialized in distance events. After college, my passion for long-distance swimming naturally evolved into running marathons, a pursuit that constantly challenges me.</p>
-            <p class="mb-0">On days off, I love reading, I am a proud cat mom, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-        </div>
-    </section>
-    <hr class="m-0" />
-    <section class="resume-section" id="activities">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Activities and Societies</h2>
-            <ul class="fa-ul mb-0">
-                <li>
-                    <span class="fa-li"></span>
-                    Marist College Swimming (NCAA Division I)
-                </li>
-                <li>
-                    <span class="fa-li"></span>
-                    Computer Society
-                </li>
-            </ul>
-        </div>
-    </section>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#activities">Activities</a>
+    </div>
 </div>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
 </body>
 </html>
