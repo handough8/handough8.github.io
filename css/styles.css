@@ -90,7 +90,7 @@
         }
 
         .text-primary {
-            color: #007bff !important;
+            color: #6f42c1 !important;
         }
 
         .social-icons {
@@ -100,7 +100,7 @@
         .social-icon {
             font-size: 1.5rem;
             margin-right: 15px;
-            color: #007bff;
+            color: #6f42c1;
             transition: color 0.3s ease;
         }
 
@@ -119,7 +119,7 @@
         }
 
         hr {
-            border-top: 3px solid #007bff;
+            border-top: 3px solid #6f42c1;
             margin: 40px 0;
         }
 }
