@@ -10972,11 +10972,6 @@ section.resume-section .resume-section-content {
   }
 }
 
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             font-family: Arial, sans-serif;
         }
@@ -11002,7 +10997,7 @@ section.resume-section .resume-section-content {
             gap: 15px;
         }
         .navbar img {
-            height: 60px;
+            height: 10px;
             width: auto;
             border-radius: 50%;
         }
